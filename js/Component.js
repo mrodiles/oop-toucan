@@ -37,4 +37,21 @@ mouse() {
     });
     
 }
+tap() {
+    document.addEventListener("touchstart", event => {
+        if (event.x > this.x &&
+            event.y > this.y &&
+            event.x < this.x + this.width &&
+            event.y < this.y + this.height) {
+            // if clicked, reset y to 0 (top of window) and x to random coordinate
+            this.y = 0;
+            this.x = Math.random() * (canvas.width - 250);
+
+            // Increment score
+            this.game.score++;
+        }
+
+    });
+}
+
 }

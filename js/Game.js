@@ -40,7 +40,9 @@ class Game {
             // Draw fruit on to canvas
             this.drawLoop(fruit)
             // Attach event listener to each fruit
+            fruit.tap();
             fruit.mouse();
+
         })
         // Start game timer
         this.startTimer();
