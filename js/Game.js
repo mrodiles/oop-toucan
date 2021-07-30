@@ -17,14 +17,14 @@ class Game {
 
         this.fruits = [this.pineappleImg, this.bananaImg, this.papayaImg, this.watermelonImg, this.pomImg, this.appleImg]
 
-        this.startButton = new Component(this, 500,250,400,200, './images/startButton.png')
+        this.startButton = new Component(this, 500, 250, 400, 200, './images/startButton.png')
 
         this.gameoverToucanImg = new Component(this, 755, 500, 250, 300, 300, './images/goToucan.png')
-        
+
         this.gameTitleImg = new Component(this, 500, 0, 500, 300, 300, './images/You-Can-Toucan.png')
-        
+
         this.gameoverImg = new Component(this, 300, 250, 350, 350, './images/gameover.png')
-        
+
 
 
 
